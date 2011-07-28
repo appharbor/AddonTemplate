@@ -1,0 +1,10 @@
+{
+  "id": "addon-template",
+  "api": {
+    "config_vars": [ "CONFIG_VAR" ],
+    "password": "PASSWORD",
+    "sso_salt": "SALT",
+    "production": "https://example.apphb.com/",
+    "test": "http://localhost:8080/"
+  }
+}
