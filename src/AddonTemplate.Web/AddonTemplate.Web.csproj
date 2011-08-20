@@ -76,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Views\Resources\Show.aspx" />
+    <Content Include="Views\Resource\Show.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
