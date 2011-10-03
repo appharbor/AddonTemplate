@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="HttpRequestExtensions.cs" />
     <Compile Include="Models\Plan.cs" />
+    <Compile Include="Models\PlatformRequest.cs" />
     <Compile Include="Models\ProvisioningRequest.cs" />
     <Compile Include="Models\ProvisionStatus.cs" />
     <Compile Include="Models\Resource.cs" />
