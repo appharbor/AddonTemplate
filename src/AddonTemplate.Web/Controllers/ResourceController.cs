@@ -90,6 +90,36 @@ namespace AddonTemplate.Web.Controllers
 			return View(viewModel);
 		}
 
+		[RequireBasicAuthentication("Heroku")]
+		public ActionResult Update(Guid id, PlatformRequest planUpdateRequest)
+		{
+			Plan plan;
+			if (!Enum.TryParse<Plan>(planUpdateRequest.plan, true, out plan))
+			{
+				throw new ArgumentException(string.Format("Plan \"{0}\" is not a valid plan"));
+			}
+
+			// TODO: Fetch the resource from persistance store
+			var resource = new Resource();
+
+			resource.Plan = plan;
+
+			// TODO: Update resource to reflect new plan
+
+			// TODO: Persist the resource change
+
+			var output = new
+			{
+				id = resource.Id,
+				config = new
+				{
+					CONFIG_VAR = "CONFIGURATION_VALUE",
+				}
+			};
+
+			return Json(output);
+		}
+
 		private void SetAddonCookie()
 		{
 			var navData = Request.QueryString["nav-data"];
