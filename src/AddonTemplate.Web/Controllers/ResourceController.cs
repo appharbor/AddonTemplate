@@ -17,7 +17,7 @@ namespace AddonTemplate.Web.Controllers
 			Plan plan;
 			if (!Enum.TryParse<Plan>(provisionRequest.plan, true, out plan))
 			{
-				throw new ArgumentException(string.Format("Plan \"{0}\" is not a valid plan"));
+				throw new ArgumentException(string.Format("Plan \"{0}\" is not a valid plan", provisionRequest.plan));
 			}
 
 			var resource = new Resource
@@ -96,7 +96,7 @@ namespace AddonTemplate.Web.Controllers
 			Plan plan;
 			if (!Enum.TryParse<Plan>(planUpdateRequest.plan, true, out plan))
 			{
-				throw new ArgumentException(string.Format("Plan \"{0}\" is not a valid plan"));
+				throw new ArgumentException(string.Format("Plan \"{0}\" is not a valid plan", planUpdateRequest.plan));
 			}
 
 			// TODO: Fetch the resource from persistance store
