@@ -58,7 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\ProviderController.cs" />
+    <Compile Include="Controllers\HerokuController.cs" />
     <Compile Include="Controllers\ResourceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

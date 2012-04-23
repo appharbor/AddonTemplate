@@ -7,7 +7,7 @@ namespace AddonTemplate.Web
 	{
 		public Routes()
 		{
-			Resource<ProviderController>(() =>
+			Resource<HerokuController>(() =>
 			{
 				Resources<ResourceController>(() =>
 				{
